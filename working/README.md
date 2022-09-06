@@ -210,7 +210,7 @@ python _06_evaluate.py --project {} --compound_coef {} --weights {} --data_path 
 
 
 ### 7) EfficientDet Model Inference
-> 다건의 이미지에 대해 모델 추론을 수행
+> 1. 다건의 이미지에 대해 모델 추론을 수행
 ```
 python _06_infer_test.py --project {} --compound_coef {} --weights {} --data_path {}
 ```
@@ -222,7 +222,8 @@ python _06_infer_test.py --project {} --compound_coef {} --weights {} --data_pat
 
 > 실행결과 : result/{project}/{now}.jpg  추론된 이미지 저장
 
-> 추론된 이미지를 정답 이미지랑 매칭 후 정답 이미지 추론된 이미지 경로에 저장
+
+> 2. 추론된 이미지를 정답 이미지랑 매칭 후 정답 이미지 추론된 이미지 경로에 저장
 ```
 python _07_matching_inference.py
 ```
