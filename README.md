@@ -26,3 +26,49 @@
     ├─labels <br/>
     └─meta <br/>
         └─V04_05_057 <br/>
+        
+---        
+
+# P&ID Preprocessing Data Directory Structure
+
+.root <br/>
+├─V01_DSME_Project 2022-08-03 14_54_01 <br/>
+│  ├─annotations <br/>
+│  ├─test <br/>
+│  ├─train <br/>
+│  └─val <br/>
+├─V01_DSME_Project 2022-08-03 14_54_01_divided <br/>
+│  ├─annotations <br/>
+│  ├─test <br/>
+│  ├─train <br/>
+│  └─val <br/>
+├─V02_AKER_Project 2022-08-05 12_17_05 <br/>
+│  ├─annotations <br/>
+│  ├─test <br/>
+│  ├─train <br/>
+│  └─val <br/>
+├─V02_AKER_Project 2022-08-05 12_17_05_divided <br/>
+│  ├─annotations <br/>
+│  ├─test <br/>
+│  ├─train <br/>
+│  └─val <br/>
+├─V03_KBR_Project 2022-08-03 14_56_42 <br/>
+│  ├─annotations <br/>
+│  ├─test <br/>
+│  ├─train <br/>
+│  └─val <br/>
+├─V03_KBR_Project 2022-08-03 14_56_42_divided <br/>
+│  ├─annotations <br/>
+│  ├─test <br/>
+│  ├─train <br/>
+│  └─val <br/>
+└─V04_TECH_Project 2022-08-05 12_16_43 <br/>
+│   ├─annotations <br/>
+│   ├─test <br/>
+│   ├─train <br/>
+│   └─val <br/>
+├─V04_TECH_Project 2022-08-05 12_16_43_divided <br/>
+   ├─annotations <br/>
+   ├─test <br/>
+   ├─train <br/>
+   └─val <br/>
