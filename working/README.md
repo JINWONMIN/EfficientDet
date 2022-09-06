@@ -223,7 +223,7 @@ python _06_infer_test.py --project {} --compound_coef {} --weights {} --data_pat
 > 실행결과 : result/{project}/{now}.jpg  추론된 이미지 저장
 
 > 추론된 이미지를 정답 이미지랑 매칭 후 정답 이미지 추론된 이미지 경로에 저장
-'''
+```
 python _07_matching_inference.py
-'''
+```
 > 실행방법 : 코드의 IMAGE_PATH 와 INFERENCE_PATH 만 경로에 맞춰서 수정
