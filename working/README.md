@@ -14,6 +14,7 @@
 | _05_train.py | 모델 학습 수행                         			|
 | _06_evaluate.py | 모델 평가 수행                    |
 | _06_infer_test.py | 모델 추론 수행 |
+| _07_matching_inference.pyt | match pred image to ground images and save|
 | requirements.txt 		   | 실행환경                         			|
 
 
@@ -220,3 +221,9 @@ python _06_infer_test.py --project {} --compound_coef {} --weights {} --data_pat
 >  --data_path : 데이터셋 경로 (default : 'data/PnID')
 
 > 실행결과 : result/{project}/{now}.jpg  추론된 이미지 저장
+
+> 추론된 이미지를 정답 이미지랑 매칭 후 정답 이미지 추론된 이미지 경로에 저장
+'''
+python _07_matching_inference.py
+'''
+> 실행방법 : 코드의 IMAGE_PATH 와 INFERENCE_PATH 만 경로에 맞춰서 수정
