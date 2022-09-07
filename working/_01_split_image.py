@@ -162,15 +162,18 @@ class SplitImage():
                 image_path = './raw_data/V01_DSME_Project 2022-08-03 14_54_01/images/V01_03_017/{}'.format(img_dict["file_name"])
 
                 # image_path = args.image_path[0]
-                if args.load_large_images:
-                    Image.MAX_IMAGE_PIXELS = None
+                # if args.load_large_images:
+                #     Image.MAX_IMAGE_PIXELS = None
 
                 im = Image.open(image_path)
-                im_width, im_height = im.size
-                min_dimension = min(im_width, im_height)
-                max_dimension = max(im_width, im_height)
+                
                 if args.square:
                     print("Resizing image to a square...")
+
+                    im_width, im_height = im.size
+                    min_dimension = min(im_width, im_height)
+                    max_dimension = max(im_width, im_height)
+                    
                     bg_color = self.determine_bg_color(im)
                     print("Background color is... " + str(bg_color))
                     im_r = Image.new("RGBA", (max_dimension, max_dimension), bg_color)
@@ -182,6 +185,7 @@ class SplitImage():
                     self.split(im_r, args.rows, args.cols, image_path)
                     print("Exporting resized image...")
                     im_r.save(image_path + "_squared.png")
+
                 else:
                     # HERE
                     self.split(im, args.rows, args.cols, image_path, img_dict) # (xmin, ymin, xmax, ymax)
@@ -210,7 +214,7 @@ if __name__ == "__main__":
                         help="If the image should be resized into a square before splitting.")
     # parser.add_argument("--cleanup", action="store_true",
     #                     help="After splitting or merging, delete the original image/images.")
-    # parser.add_argument("--load-large-images", action="store_true",
+    # parser.add_argument("--load_large_images", action="store_true",
     #                     help="Ignore the PIL decompression bomb protection and load all large files.")
     args = parser.parse_args()
     si = SplitImage()
