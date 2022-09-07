@@ -8,6 +8,7 @@
 | result           | 수행결과 저장                         |
 | weights | 기본 모델 저장  |
 | _01_merge_instance.py | 데이터셋 병합 |
+| _01_split_image.py | 병합된 데이터셋을 대상으로 여러 등분으로 나눔 |
 | _02_gen_dataset_imbalanced.py | 데이터셋 생성 (_01_merge_instance.py 선 실행 필) |
 | _03_resize_image.py | 이미지 사이즈 변경 |
 | _04_gen_anchor_ratios.py | 학습 데이터에 따른 anchor ratio 출력 |
@@ -86,7 +87,7 @@
 >     		V03_KBR_Project 2022-08-03 14_56_42   = V03
 >             V04_TECH_Project 2022-08-05 12_16_43 = V04
 >
->     
+> 
 >
 > 2. 해당 클래스가 있는 원본 폴더 확인
 >     NAS: r"\\192.168.219.150\XaiData\R&D\Project\2022_06_NIA_조선·해양 플랜트 P&ID 심볼 식별 데이터\02.데이터\62_SampleData_1cycle-2022-0805" 하위
@@ -97,18 +98,34 @@
 >                ㄴ meta
 >                ㄴ project.json
 >
->     
+> 
 >
-> 3. 실행
+> 3. 데이터 병합 실행
 >     python _01_merge_instance.py --ctg_path {catagory_path}
->
 >     - catagory_path은 categories.csv 경로를 입력
 >       - 만약 폴더명에 띄어쓰기가 존재하는 경우에는 소스코드 내부 최하단의 argument parser의 default 값을 변경하는 것을 권장함
 >     - 소스코드 내부 CreateLearningJson 클래스 __init__() 내 PATH 수정 필요
+>
+> ```bash
+> python _01_merge_instance.py --ctg_path {catagory_path}
+> ```
 
-```bash
-python _01_merge_instance.py --ctg_path {catagory_path}
-```
+> 
+>
+> 4. 이미지 분할
+>
+>    python _01_split_image.py --rows {num_rows} --cols {num_cols} --reverse {merge_yn} --square {square_yn}
+>
+>    - rows : 행을 나누는 분할 개수 (필수)
+>    - cols : 열을 나누는 분할 개수 (필수)
+>    - reverse : 병합 모드 여부
+>    - square : 나누기 전 이미지를 정사각 형태로 리사이즈할지 여부
+>
+> ```bash
+> python _01_split_image.py --rows {num_rows} --cols {num_cols} --reverse {merge_yn} --square {square_yn}
+> ```
+>
+> 
 
 
 
