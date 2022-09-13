@@ -14,7 +14,7 @@
 
 > 65, 84 Line) 'V01_test' 부분으로 save path의 하위 폴더 이름 설정
 >
-> 74 Line) bbox는 어노테이션 좌표가 x Min, y Min, Width, Height를 의미 (x Min, y Min, x Max, y Max를 의미하는 경우도 있으니 확인 필요)
+> 74 Line) bbox는 어노테이션 좌표가 x Min, y Min, Width, Height를 의미 (x Min, y Min, x Max, y Max)를 의미하는 경우도 있으니 확인 필요)
 > 
 >
 > 
