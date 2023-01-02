@@ -1,74 +1,24 @@
-# P&ID Raw Data Directory Structure
+## 구동 환경 세팅
+---
+![](./docker_tree.png)
 
-.root <br/>
-├─Sampledata_1cycle_문서 <br/>
-├─V01_DSME_Project 2022-08-03 14_54_01 <br/>
-│  ├─images <br/>
-│  │  └─V01_03_017 <br/>
-│  ├─labels <br/>
-│  └─meta <br/>
-│      └─V01_03_017 <br/> 
-├─V02_AKER_Project 2022-08-05 12_17_05 <br/>
-│  ├─images <br/>
-│  │  └─V02_04_004 <br/>
-│  ├─labels <br/>
-│  └─meta <br/>
-│      └─V02_04_004 <br/>
-├─V03_KBR_Project 2022-08-03 14_56_42 <br/>
-│  ├─images <br/>
-│  │  └─V03_01_052 <br/>
-│  ├─labels <br/>
-│  └─meta <br/>
-│      └─V03_01_052 <br/>
-└─V04_TECH_Project 2022-08-05 12_16_43 <br/>
-    ├─images <br/>
-    │  └─V04_05_057 <br/>
-    ├─labels <br/>
-    └─meta <br/>
-        └─V04_05_057 <br/>
-        
----        
+docker file과 scripts를 같은 경로에 위치.
 
-# P&ID Preprocessing Data Directory Structure
 
-.root <br/>
-├─V01_DSME_Project 2022-08-03 14_54_01 <br/>
-│  ├─annotations <br/>
-│  ├─test <br/>
-│  ├─train <br/>
-│  └─val <br/>
-├─V01_DSME_Project 2022-08-03 14_54_01_divided <br/>
-│  ├─annotations <br/>
-│  ├─test <br/>
-│  ├─train <br/>
-│  └─val <br/>
-├─V02_AKER_Project 2022-08-05 12_17_05 <br/>
-│  ├─annotations <br/>
-│  ├─test <br/>
-│  ├─train <br/>
-│  └─val <br/>
-├─V02_AKER_Project 2022-08-05 12_17_05_divided <br/>
-│  ├─annotations <br/>
-│  ├─test <br/>
-│  ├─train <br/>
-│  └─val <br/>
-├─V03_KBR_Project 2022-08-03 14_56_42 <br/>
-│  ├─annotations <br/>
-│  ├─test <br/>
-│  ├─train <br/>
-│  └─val <br/>
-├─V03_KBR_Project 2022-08-03 14_56_42_divided <br/>
-│  ├─annotations <br/>
-│  ├─test <br/>
-│  ├─train <br/>
-│  └─val <br/>
-└─V04_TECH_Project 2022-08-05 12_16_43 <br/>
-│   ├─annotations <br/>
-│   ├─test <br/>
-│   ├─train <br/>
-│   └─val <br/>
-├─V04_TECH_Project 2022-08-05 12_16_43_divided <br/>
-   ├─annotations <br/>
-   ├─test <br/>
-   ├─train <br/>
-   └─val <br/>
+<br/>
+
+- docker image build
+```bash
+$ docker build -f dev.dockerfile -t {user name}/{image name}:{tag} .
+
+$ docker build -f dev.dockerfile -t mjw/efficientdet:v.0.1 .
+```
+- docker container run
+```bash
+$ docker run --runtime=nvidia --rm -itd --gpus all --name eff-det-01 mjw/efficientdet:v.0.1 .
+
+$ docker exec -it eff-det-01 /bin/bash
+
+*** In Docker **
+root@dd78a3ae73ec:/# $ cd /home
+```
