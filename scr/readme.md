@@ -11,8 +11,8 @@ Google Brain에서 2019년에 발표한 EfficientDet: Scalable and Efficient Obj
 
 ## EfficientDet Architectrue
 ---
-![](./architecture.png)
-![](./scaling%20configs.png)
+![architecture](https://user-images.githubusercontent.com/94345086/210199690-4ca071e8-2e27-4656-a70c-a95564c34ca2.png)
+![scaling configs](https://user-images.githubusercontent.com/94345086/210199692-0af87997-aad3-427b-aaf6-0f70887ebfef.png)
 
 - compound coefficient: 4를 사용.
 - Backbone은 Freeze 시키고 나머지 BiFPN과 HEAD 부분만 finetuning
