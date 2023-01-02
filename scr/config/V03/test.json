@@ -1,0 +1,51 @@
+{
+"images": [
+    {
+        "id"                : int,   // img id
+        "width"             : int,   // img width
+        "height"            : int,   // img height
+        "file_name"         : str,   // img file name
+    }
+],
+
+
+"annotations":[
+    {
+        "id"                : int,   // annotation id
+        "image_id"          : int,   // ima id
+        "ytrue"             : int,   // category id, 없으면 None
+        "bbox"              : [x, y, width, height],   // 없으면 None
+        "confidence_score"  : float, // yture 값이 None 이면, None
+        "iou_score"         : float, // iou score 값
+        "cate_name"         : str,
+        "super_cate"        : str,
+        
+    },
+    {
+        "id"                : int,   // annotation id
+        "image_id"          : int,   // ima id
+        "ypred"             : int,   // category id, 없으면 None
+        "bbox"              : [x, y, width, height],   // 없으면 None
+        "confidence_score"  : float, // ypred 값이 None 이면, None
+        "iou_score"         : float, // iou score 값         
+        "cate_name"         : str,
+        "super_cate"        : str,
+    }
+],
+
+"prediction": [
+    {
+        "recall"            : list,  // 101-point interopolation 을 사용하면, [0.0:0.01:1.0] 총 101개의 구간
+        "precision"         : list,  // list(float)  --> ex) 클래스별 recall 구간 별 precision [0.852542151, ... ,0.675525884]^1st class, ... [0.85146482, ..., 0.841235896]^last class       
+    }    
+],
+
+"categories": [     // 이거는 굳이 결과 딕셔너리에 포함시키지도 않아도 될 것 같습니다.
+    {
+        "id"                : int,
+        "name"              : str,
+        "supercategory"     : str,
+    }
+]
+    
+}

@@ -1,0 +1,79 @@
+project_name: V03  # 데이터셋 생성시 _data/pid/ 하위에 생성되어있는 폴더명 기재
+train_set: train
+val_set: val
+test_set: test
+num_gpus: 3
+
+visual_path: origin
+
+mean: [ 0.485, 0.456, 0.406 ]
+std: [ 0.229, 0.224, 0.225 ]
+
+anchors_scales: '[2 ** 0, 2 ** (1.0 / 3.0), 2 ** (2.0 / 3.0)]'
+anchors_ratios: '[(0.8, 1.3), (1.0, 1.0), (1.3, 0.8)]'  # train / inference
+
+input_sizes: [512, 640, 768, 896, 1024, 1280, 1280, 1536, 1536]
+
+obj_list: ["1201", "1202", "1209", "1301", "1401", "1501", "1502", "1504", "1505", "1506", "1507", "1508", "1509", "1510", "1511",
+"1512", "1513", "1514", "1517", "1518", "1519", "1522", "1523", "1524", "1526", "1528", "1529", "1530", "1603", "1701", "1702",
+"1704", "1706", "1709", "1711", "1714", "1715", "1716", "1717", "1719", "1723", "1725", "1726", "1732", "1733", "1734", "1735",
+"1737", "1739", "1742", "1744", "1752", "1754", "1801", "1810", "1812", "1813", "1903", "1907", "1908", "1909", "1910", "1913",
+"1915", "1916", "1919", "1920", "1921", "1922", "1923", "1927", "1930", "1933", "1935", "1938", "1939", "1942", "1943", "1945",
+"1948", "1950", "1951", "1952", "1958", "1960", "1963", "1964", "1968", "1969", "2001", "2104"]
+
+ROOT: './data/PnID_updated_202212'
+
+# Use dataset.py
+rawdata_path: './raw_data/PnID_updated_202212'
+cfg_json: './config/V03/V03.json'
+cfg_csv: './config/V03/categories_V03.csv'
+
+fold: 0
+th_yn: False
+img_threshold: 210
+
+cpu_core: 60
+rows: 5
+cols: 5
+overlap_height_ratio: 0.2
+overlap_width_ratio: 0.2
+
+# Use train.py / eval.py / fo_eval.py
+compound_coef: 4
+
+# Use train.py
+num_workers: 32 # num_workers of dataloader
+batch_size: 24  # The number of images per batch among all devices
+lr: 0.001 
+optim: 'adamw'  # select optimizer for training,
+                # suggest using 'admaw' until the very final stage then switch to 'sgd'
+num_epochs: 100
+val_interval: 1 # Number of epoches between valing phases
+save_interval: 10000 # Number of steps between saving
+es_min_delta: 0.0   # Early stopping's parameter: minimum change loss to qualify as an improvement
+es_patience: 0  # Early stopping's parameter: number of epochs with no improvement after which training
+                # will be stopped. Set to 0 to disable this technique
+log_path: 'result/'
+load_weights: 'weights/efficientdet-d4.pth' # whether to load weights from a checkpoint, set None to initialize,
+                                            # set 'last' to load last checkpoint
+saved_path: 'result/'
+matched_threshold: 0.5  # Threshold for positive matches
+unmatched_threshold: 0.4 # Threshold for negative matches                                         
+
+# Use eval.py
+weights: 'result/V03/20221219_104909/efficientdet-d4_22_88550_best.pth' # '/path/to/weights'
+result_path: 'result/V03/20221219_104909/inference' # displing images 
+nms_threshold: 0.5  # nms threshold, don't change it if not for testing purposes
+device: 0 # eval.py / fo_eval.py
+threshold: 0.2  # confidence score threshold
+
+### Use only fo_eval.py
+obj_list1: ["none", "1201", "1202", "1209", "1301", "1401", "1501", "1502", "1504", "1505", "1506", "1507", "1508", "1509", "1510", "1511",
+"1512", "1513", "1514", "1517", "1518", "1519", "1522", "1523", "1524", "1526", "1528", "1529", "1530", "1603", "1701", "1702",
+"1704", "1706", "1709", "1711", "1714", "1715", "1716", "1717", "1719", "1723", "1725", "1726", "1732", "1733", "1734", "1735",
+"1737", "1739", "1742", "1744", "1752", "1754", "1801", "1810", "1812", "1813", "1903", "1907", "1908", "1909", "1910", "1913",
+"1915", "1916", "1919", "1920", "1921", "1922", "1923", "1927", "1930", "1933", "1935", "1938", "1939", "1942", "1943", "1945",
+"1948", "1950", "1951", "1952", "1958", "1960", "1963", "1964", "1968", "1969", "2001", "2104"]
+iou_threshs: [0.5]
+iou: 0.5
+model_name: '20221219_104909'

@@ -1,0 +1,147 @@
+supercategory,id,name,full_name
+P&ID,1,1102,Compressors@Compressor
+P&ID,2,1201,Equipments@Agitator
+P&ID,3,1202,Equipments@Eye Washer
+P&ID,4,1206,Equipments@Hose Reel
+P&ID,5,1209,Equipments@Spray Nozzle
+P&ID,6,1210,Equipments@High Rate Mixer
+P&ID,7,1211,Equipments@Mud Gun
+P&ID,8,1212,Equipments@Tank Cleaner
+P&ID,9,1301,Filters@Air Filter
+P&ID,10,1302,Filters@Gas Sampling Filter
+P&ID,11,1401,Heat Exchanges@Heat Exchanger
+P&ID,12,1501,Instruments@Different Pressure Indicator
+P&ID,13,1502,Instruments@Flow Indicator
+P&ID,14,1504,Instruments@Flow Transmitter
+P&ID,15,1505,Instruments@Level Gauge
+P&ID,16,1506,Instruments@Level Indicator
+P&ID,17,1507,Instruments@Level Switch
+P&ID,18,1508,Instruments@Level Transmitter
+P&ID,19,1509,Instruments@Orifice Plate
+P&ID,20,1510,Instruments@Position Indicator
+P&ID,21,1511,Instruments@Position Switch
+P&ID,22,1512,Instruments@Pressure Gauge
+P&ID,23,1513,Instruments@Pressure Indicator
+P&ID,24,1514,Instruments@Pressure Transmitter
+P&ID,25,1517,Instruments@Temperature Gauge
+P&ID,26,1518,Instruments@Temperature Indicator
+P&ID,27,1519,Instruments@Temperature Transmitter
+P&ID,28,1521,Instruments@Different Pressure Indicator Alarm
+P&ID,29,1522,Instruments@Hand Indicator Controller
+P&ID,30,1523,Instruments@Hand Switch
+P&ID,31,1524,Instruments@Level Alarm
+P&ID,32,1525,Instruments@Level Indicator Alarm
+P&ID,33,1526,Instruments@Level Indicator Transmitter
+P&ID,34,1527,Instruments@Level Safety Alarm
+P&ID,35,1528,Instruments@Miscellaneous Alarm
+P&ID,36,1529,Instruments@Position Indicator Controller
+P&ID,37,1530,Instruments@Pressure Alarm
+P&ID,38,1531,Instruments@Pressure Indicator Alarm
+P&ID,39,1532,Instruments@Pressure Safety Alarm
+P&ID,40,1533,Instruments@Temperature Indicator Alarm
+P&ID,41,1534,Instruments@Temperature Safety Alarm
+P&ID,42,1535,Instruments@Vibration Indicator
+P&ID,43,1603,Motors@Electric Motor
+P&ID,44,1701,Piping Accessories@Basket Type Strainer
+P&ID,45,1702,Piping Accessories@Bird Screen
+P&ID,46,1704,Piping Accessories@Cap
+P&ID,47,1706,Piping Accessories@Diaphragm Seal
+P&ID,48,1707,Piping Accessories@Drain Trap
+P&ID,49,1709,Piping Accessories@Drain Item
+P&ID,50,1710,Piping Accessories@Duplex Strainer
+P&ID,51,1711,Piping Accessories@Ejector/Injector
+P&ID,52,1713,Piping Accessories@Expansion Joint
+P&ID,53,1714,Piping Accessories@Flame Arrestor
+P&ID,54,1715,Piping Accessories@Flange
+P&ID,55,1716,Piping Accessories@Flange With Blind Flange
+P&ID,56,1717,Piping Accessories@Flexible Hose
+P&ID,57,1719,Piping Accessories@Gully/Scupper
+P&ID,58,1722,Piping Accessories@Mud Box
+P&ID,59,1723,Piping Accessories@Plug
+P&ID,60,1725,Piping Accessories@Quick Coupling
+P&ID,61,1726,Piping Accessories@Reducer
+P&ID,62,1727,Piping Accessories@Rose Plate/Box
+P&ID,63,1732,Piping Accessories@Spacer
+P&ID,64,1733,Piping Accessories@Spade
+P&ID,65,1734,Piping Accessories@Spectacle Blind
+P&ID,66,1735,Piping Accessories@Spool Piece
+P&ID,67,1736,Piping Accessories@Steam Trap
+P&ID,68,1737,Piping Accessories@Temporary Strainer/Filter
+P&ID,69,1739,Piping Accessories@T-Type Strainer
+P&ID,70,1742,Piping Accessories@Vent
+P&ID,71,1743,Piping Accessories@WECO Connection
+P&ID,72,1744,Piping Accessories@Y-Type Strainer
+P&ID,73,1745,Piping Accessories@Air Filter Regulator
+P&ID,74,1746,Piping Accessories@Compensator
+P&ID,75,1747,Piping Accessories@Diffuser
+P&ID,76,1748,Piping Accessories@Flexible Joint
+P&ID,77,1749,Piping Accessories@Hammer Lug Union
+P&ID,78,1750,Piping Accessories@Insulating Gasket
+P&ID,79,1751,Piping Accessories@Moisture Eliminator
+P&ID,80,1752,Piping Accessories@Pulsation Damper
+P&ID,81,1753,Piping Accessories@Quick Connect
+P&ID,82,1754,Piping Accessories@Rupture Disc
+P&ID,83,1755,Piping Accessories@Sounding Cap
+P&ID,84,1756,Piping Accessories@Sounding Plug
+P&ID,85,1757,Piping Accessories@Swivel Joint
+P&ID,86,1758,Piping Accessories@Vent Head
+P&ID,87,1759,Piping Accessories@Vortex Eductor Nozzle
+P&ID,88,1801,Pumps@Centrifugal Pump
+P&ID,89,1810,Pumps@Screw Pump
+P&ID,90,1812,Pumps@Pump General
+P&ID,91,1813,Pumps@Diaphragm Pump
+P&ID,92,1903,Valves@3-Way Valve
+P&ID,93,1907,Valves@Ball Valve Type 1
+P&ID,94,1908,Valves@Butterfly Valve Type 1
+P&ID,95,1909,Valves@Check Valve Type 1
+P&ID,96,1910,Valves@Compact DBB Valve
+P&ID,97,1913,Valves@Diaphragm Actuator Valve
+P&ID,98,1915,Valves@DBB Valve
+P&ID,99,1916,Valves@DBB Needle Valve
+P&ID,100,1919,Valves@Instrument Connection Ball Valve
+P&ID,101,1920,Valves@Gate Valve
+P&ID,102,1921,Valves@Gauge Valve
+P&ID,103,1922,Valves@Globe Valve
+P&ID,104,1923,Valves@Cylinder Actuator Ball Valve
+P&ID,105,1926,Valves@Motor Actuator Valve
+P&ID,106,1927,Valves@Needle Valve
+P&ID,107,1930,Valves@Piston Actuated Valve
+P&ID,108,1933,Valves@Pressure Relief Valve
+P&ID,109,1934,Valves@Quick Closing Valve
+P&ID,110,1935,Valves@Relief Valve
+P&ID,111,1937,Valves@Self Closing Valve
+P&ID,112,1938,Valves@Self Actuated Valve
+P&ID,113,1939,Valves@SBB Valve
+P&ID,114,1942,Valves@Choke Valve/Angle Valve
+P&ID,115,1943,Valves@Cylinder Actuator Butterfly Valve
+P&ID,116,1944,Valves@Diaphragm Actuator 3-Way Valve
+P&ID,117,1945,Valves@Diaphragm Actuator Globe Valve
+P&ID,118,1946,Valves@ESD 3-Way Valve
+P&ID,119,1947,Valves@Hydraulic Operated Butterfly Valve
+P&ID,120,1948,Valves@Pilot Relief Valve
+P&ID,121,1949,Valves@Piston Actuated 3-Way Valve
+P&ID,122,1950,Valves@Piston Actuated Ball Valve
+P&ID,123,1951,Valves@Piston Actuated Butterfly Valve
+P&ID,124,1952,Valves@Piston Actuated Globe Valve
+P&ID,125,1953,Valves@Pneumatic Actuated 3-Way Valve
+P&ID,126,1954,Valves@Pneumatic Actuated Ball Valve
+P&ID,127,1955,Valves@Pneumatic Actuated Butterfly Valve
+P&ID,128,1956,Valves@Pneumatic Actuated Gate Valve
+P&ID,129,1957,Valves@Pneumatic Actuated Globe Valve
+P&ID,130,1958,Valves@Solenoid Operated 3-Way Valve
+P&ID,131,1959,Valves@Solenoid Operated Diaphragm Valve
+P&ID,132,1960,Valves@Solenoid Operated Gate Valve
+P&ID,133,1961,Valves@Solenoid Operated Globe Valve
+P&ID,134,1962,Valves@Two Port Solenoid Valve
+P&ID,135,1963,Valves@Ball Valve Type 2
+P&ID,136,1964,Valves@Reduced Ball Valve
+P&ID,137,1965,Valves@Butterfly Lug Valve
+P&ID,138,1966,Valves@Butterfly Wafer Valve
+P&ID,139,1967,Valves@Ball Valve Type 3
+P&ID,140,1968,Valves@Butterfly Valve Type 2
+P&ID,141,1969,Valves@Check Valve Type 2
+P&ID,142,2001,Vessels@Vortex Breaker
+P&ID,143,2101,General@2-Way Fire Water/Foam Hydrant
+P&ID,144,2102,General@Accumulator
+P&ID,145,2103,General@Fire Damper
+P&ID,146,2104,General@Silencer
