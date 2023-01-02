@@ -38,34 +38,6 @@ $ wget https://github.com/zylo117/Yet-Another-Efficient-Pytorch/releases/downloa
 <br/>
 <br/>
 
-## 구동 환경 세팅
----
-![](./docker_tree.png)
-
-docker file 과 스크립트를 같은 경로에 위치.
-
-
-<br/>
-
-- docker image bulid
-```bash
-$ docker bulid -f dev.dockerfile -t [user name]/[image name]:[tag] .
-
-$ docker build -f dev.dockerfile -t mjw/efficientdet:v.0.1 .
-```
-- docker container run
-```bash
-$ docker run --runtime=nvidia --rm -itd --gpus all --name eff-det-01 mjw/efficientdet:v.0.1
-
-$ docker exec -it eff-det-01 /bin/bash
-
-*** In Docker ***
-root@dd78a3ae73ec:/# $ cd /home
-```
-
-<br/>
-<br/>
-
 ## Dataset
 ---
 1. raw 데이터셋 준비
