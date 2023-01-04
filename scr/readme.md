@@ -196,3 +196,10 @@ iou: 0.5
 ```bash
 $ python fo_eval.py --config config/V01/V01.yml --cuda True --float16 False --override True 
 ```
+
+<br/>
+<br/>
+
+---
+###  Voxel51 - Binary forms redistribution
+it was used as a binary form in the fo_eval.py
