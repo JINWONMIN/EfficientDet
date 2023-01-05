@@ -201,7 +201,7 @@ $ python fo_eval.py --config config/V01/V01.yml --cuda True --float16 False --ov
 <br/>
 
 ---
-###Open Sourc LISENCE   
+### Open Source LISENCE   
 - Voxel51 - Binary forms redistribution
     - it was used as a binary form in the fo_eval.py
-<https://github.com/voxel51/fiftyone/blob/develop/LICENSE>
+    - <https://github.com/voxel51/fiftyone/blob/develop/LICENSE>
