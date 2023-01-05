@@ -22,10 +22,10 @@ ENV NVIDIA_VISIBLE_DEVICES=all
 ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
 ENV NVIDIA_REQUIRE_CUDA="cuda>=$CUDA_MAJOR_VERSION.$CUDA_MINOR_VERSION"
 
-# ADD ./src/ /home/src/
-# ADD ./README.md /home/
-# ADD ./LICENSE /home/
-# ADD ./dev.dockerfile /home/
+ADD ./src/ /home/src/
+ADD ./README.md /home/
+ADD ./LICENSE /home/
+ADD ./dev.dockerfile /home/
 
 # Add KAKAO ubuntu archive mirror server
 RUN sed -i 's@archive.ubuntu.com@mirror.kakao.com@g' /etc/apt/sources.list && \
