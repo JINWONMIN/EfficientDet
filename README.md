@@ -15,7 +15,7 @@ $ docker build -f dev.dockerfile -t mjw/efficientdet:v.0.1 .
 ```
 - docker container run
 ```bash
-$ docker run --runtime=nvidia --rm -itd --gpus all --name eff-det-01 mjw/efficientdet:v.0.1 .
+$ docker run --runtime=nvidia --rm -itd --gpus all --name eff-det-01 mjw/efficientdet:v0.1 .
 
 $ docker exec -it eff-det-01 /bin/bash
 
