@@ -11,7 +11,7 @@ docker file과 scripts를 같은 경로에 위치.
 ```bash
 $ docker build -f dev.dockerfile -t {user name}/{image name}:{tag} .
 
-$ docker build -f dev.dockerfile -t mjw/efficientdet:v.0.1 .
+$ docker build -f dev.dockerfile -t mjw/efficientdet:v0.1 .
 ```
 - docker container run
 ```bash
