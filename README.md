@@ -1,6 +1,6 @@
 ## 구동 환경 세팅
 ---
-![](https://user-images.githubusercontent.com/94345086/210198204-19891af5-b0e6-4915-863a-69ab4d5e99ef.png)
+![tree](src/doc/img/tree.png)
 
 docker file과 scripts를 같은 경로에 위치.
 
